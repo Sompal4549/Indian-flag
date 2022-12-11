@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Car made using HTML and CSS" />
+    <meta name="keywords" content="HTML, CSS, make car using HTML" />
+    <title>Hindustan (Indian) flag using HTML, and CSS</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background-color: aquamarine;
+        padding: 0;
+        margin: 0;
+      }
+      .flag-container {
+        height: 100vh;
+        width: 100vw;
+        display: grid;
+        place-items: center;
+      }
+      .maindiv {
+        width: 500px;
+        height: 150px;
+        background-color: white;
+        /* border: 1px solid black; */
+        position: relative;
+        /* border-radius: 100px 100px 0 0; */
+      }
+      .maindiv::after {
+        content: "";
+        width: 500px;
+        height: 150px;
+        background-color: orange;
+        left: 0;
+        bottom: 149px;
+        right: 0;
+        /* border: 1px solid black; */
+        position: absolute;
+      }
+      .maindiv::before {
+        content: "";
+        position: absolute;
+        width: 500px;
+        height: 150px;
+        top: 150px;
+        background-color: green;
+      }
+      .wheel {
+        height: 150px;
+        width: 150px;
+        border: 1.5px solid blue;
+        border-radius: 100px;
+        position: relative;
+        margin: 0 auto;
+      }
+      .wheel .line {
+        height: 100%;
+        width: 1.5px;
+        display: inline-block;
+        position: absolute;
+        left: 49.6%;
+        /* border: 1.5px ridge blue; */
+        background-color: blue;
+      }
+      .line:nth-child(1) {
+        transform: rotate(15deg);
+      }
+      .line:nth-child(2) {
+        transform: rotate(30deg);
+      }
+      .line:nth-child(3) {
+        transform: rotate(45deg);
+      }
+      .line:nth-child(4) {
+        transform: rotate(60deg);
+      }
+      .line:nth-child(5) {
+        transform: rotate(75deg);
+      }
+      .line:nth-child(6) {
+        transform: rotate(90deg);
+      }
+      .line:nth-child(7) {
+        transform: rotate(105deg);
+      }
+      .line:nth-child(8) {
+        transform: rotate(120deg);
+      }
+      .line:nth-child(9) {
+        transform: rotate(135deg);
+      }
+      .line:nth-child(10) {
+        transform: rotate(150deg);
+      }
+      .line:nth-child(11) {
+        transform: rotate(165deg);
+      }
+      .line:nth-child(12) {
+        transform: rotate(180deg);
+      }
+    </style>
+  </head>
+  <body>
+    <main class="main-container">
+      <section class="flag-container">
+        <div class="maindiv">
+          <div class="wheel">
+            <span class="line"></span><span class="line"></span
+            ><span class="line"></span><span class="line"></span
+            ><span class="line"></span><span class="line"></span
+            ><span class="line"></span><span class="line"></span
+            ><span class="line"></span><span class="line"></span
+            ><span class="line"></span><span class="line"></span>
+          </div>
+        </div>
+      </section>
+      <section class="car-container">
+        <div></div>
+      </section>
+    </main>
+  </body>
+</html>
